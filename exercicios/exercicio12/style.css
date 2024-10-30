@@ -1,0 +1,19 @@
+/*Adicionando estilização com variáveis CSS
+
+Imagine que você está trabalhando em um projeto de web design e precisa implementar um estilo consistente em várias páginas usando CSS. Você decide usar variáveis CSS para manter as cores e as fontes uniformes em todo o projeto. Sua tarefa é editar o arquivo styles.css para adicionar uma nova variável com o valor hexadecimal #9353FF chamada --cor-roxa e usá-la no background de um botão.*/
+
+:root {
+    --cor-roxa: #9353FF;
+}
+
+button {
+    padding: 12px 16px;
+    border-radius: 24px;
+    background-color: var(--cor-roxa);
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+
+}
+
