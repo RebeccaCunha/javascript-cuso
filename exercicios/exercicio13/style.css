@@ -1,27 +1,31 @@
-main {
-    margin-top: 64px;
-
+.caixa-de-sugestoes {
+    font-family: 'Inter', sans-serif;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 24px;
-
-    width: 440px;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
 }
 
-h2 {
-    font-family: 'Inter', sans-serif;
+.caixa-de-sugestoes h1 {
     font-size: 20px;
 }
-
-input {
+.caixa-de-sugestoes input {
     padding: 7px 15px;
-    width: 307px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
-button {
+.caixa-de-sugestoes button {
     background-color: #9353FF;
     color: #fff;
+    border: none;
     padding: 9px 18px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
