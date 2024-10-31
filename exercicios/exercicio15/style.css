@@ -1,0 +1,32 @@
+.input-checkbox {
+    display: none; /* Esconde o checkbox padrão */
+}
+
+/* Estilo do checkbox personalizado */
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Cor de fundo padrão */
+    border: 1px solid black; /* Borda */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilo do checkbox personalizado quando marcado */
+.input-checkbox:checked + .checkbox-customizado {
+    background-color: #9353FF; /* Cor de fundo quando marcado */
+    position: relative;
+}
+
+/* Estilo do ícone de check quando marcado */
+.input-checkbox:checked + .checkbox-customizado::after {
+    content: ""; 
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: 2px solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
